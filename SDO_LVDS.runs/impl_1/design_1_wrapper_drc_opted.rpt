@@ -1,0 +1,57 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Mar 27 13:55:30 2024
+| Host         : LAPTOP-4NG0TGNQ running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT design_1_i/ClockDivider_LVDS/inst/ClockDivider_v1_0_S00_AXI_inst/clkdiv[0]_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+design_1_i/ClockDivider_LVDS/inst/ClockDivider_v1_0_S00_AXI_inst/clkreg_reg[1]
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT design_1_i/ClockDivider_LVDS/inst/ClockDivider_v1_0_S00_AXI_inst/clkout_INST_0 is driving clock pin of 10 cells. This could lead to large hold time violations. Involved cells are:
+design_1_i/LVDS_Tx_0/inst/DATA_OUT_reg,
+design_1_i/LVDS_Tx_0/inst/WRITE_DONE_reg,
+design_1_i/LVDS_Tx_0/inst/counter_reg[0],
+design_1_i/LVDS_Tx_0/inst/counter_reg[1],
+design_1_i/LVDS_Tx_0/inst/counter_reg[2],
+design_1_i/LVDS_Tx_0/inst/counter_reg[3],
+design_1_i/LVDS_Tx_0/inst/counter_reg[4],
+design_1_i/LVDS_Tx_0/inst/counter_reg[5],
+design_1_i/LVDS_Tx_0/inst/cur_state_reg[0]
+design_1_i/LVDS_Tx_0/inst/cur_state_reg[1]
+Related violations: <none>
+
+

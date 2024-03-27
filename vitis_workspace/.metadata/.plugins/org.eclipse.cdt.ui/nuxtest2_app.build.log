@@ -1,0 +1,41 @@
+18:12:43 **** Build of configuration Debug for project nuxtest2_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/19165/Documents/Xilinx_Projects/muxtest2/vitis_workspace/fmc_test_wrapper/export/fmc_test_wrapper/sw/fmc_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:23:
+C:/Users/19165/Documents/Xilinx_Projects/muxtest2/vitis_workspace/fmc_test_wrapper/export/fmc_test_wrapper/sw/fmc_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/19165/Documents/Xilinx_Projects/muxtest2/vitis_workspace/fmc_test_wrapper/export/fmc_test_wrapper/sw/fmc_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/helloworld.c: In function 'ReadUartBytes':
+../src/helloworld.c:364:35: warning: variable 'regAddr' set but not used [-Wunused-but-set-variable]
+  364 |         unsigned int commandByte, regAddr;
+      |                                   ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/19165/Documents/Xilinx_Projects/muxtest2/vitis_workspace/fmc_test_wrapper/export/fmc_test_wrapper/sw/fmc_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: nuxtest2_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/19165/Documents/Xilinx_Projects/muxtest2/vitis_workspace/fmc_test_wrapper/export/fmc_test_wrapper/sw/fmc_test_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "nuxtest2_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nuxtest2_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size nuxtest2_app.elf  |tee "nuxtest2_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37447	   1984	  22744	  62175	   f2df	nuxtest2_app.elf
+'Finished building: nuxtest2_app.elf.size'
+' '
+
+18:12:44 Build Finished (took 1s.742ms)
+
