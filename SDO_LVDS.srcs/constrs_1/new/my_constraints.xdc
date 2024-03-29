@@ -42,10 +42,19 @@ set_property IOSTANDARD LVDS_25 [get_ports LVDS_DATA_N]
 set_property PACKAGE_PIN T17 [get_ports LVDS_DATA_N]
 
 set_property IOSTANDARD LVCMOS25 [get_ports test_clk]
-set_property PACKAGE_PIN P20 [get_ports test_clk]
+set_property PACKAGE_PIN R21 [get_ports test_clk]
 
 set_property IOSTANDARD LVCMOS25 [get_ports {MISC_rtl_tri_io[*]}]
 set_property PACKAGE_PIN C15 [get_ports MISC_rtl_tri_io[0]]; # VProg Ctrl
 set_property PACKAGE_PIN B15 [get_ports MISC_rtl_tri_io[1]]; # Reset Ctrl
 set_property PACKAGE_PIN J22 [get_ports MISC_rtl_tri_io[2]]; # BUSY
 set_property PACKAGE_PIN J21 [get_ports MISC_rtl_tri_io[3]]; # DTB
+
+set_property IOSTANDARD LVCMOS25 [get_ports {QSPI_rtl_tri_io[*]}]
+set_property PACKAGE_PIN G20 [get_ports QSPI_rtl_tri_io[0]]; # SD0
+set_property PACKAGE_PIN K21 [get_ports QSPI_rtl_tri_io[1]]; # SD1
+set_property PACKAGE_PIN P21 [get_ports QSPI_rtl_tri_io[2]]; # SD2
+set_property PACKAGE_PIN P20 [get_ports QSPI_rtl_tri_io[3]]; # SD3
+set_property PACKAGE_PIN G19 [get_ports QSPI_rtl_tri_io[4]]; # SCK
+set_property PACKAGE_PIN G21 [get_ports QSPI_rtl_tri_io[5]]; # CSN
+

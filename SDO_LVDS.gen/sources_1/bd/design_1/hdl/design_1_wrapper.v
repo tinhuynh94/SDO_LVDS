@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Mar 27 13:49:40 2024
+//Date        : Thu Mar 28 18:52:44 2024
 //Host        : LAPTOP-4NG0TGNQ running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -37,7 +37,7 @@ module design_1_wrapper
     LVDS_DATA_N,
     LVDS_DATA_P,
     MISC_rtl_tri_io,
-    test_clk);
+    QSPI_rtl_tri_io);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -64,7 +64,7 @@ module design_1_wrapper
   output [0:0]LVDS_DATA_N;
   output [0:0]LVDS_DATA_P;
   inout [3:0]MISC_rtl_tri_io;
-  output test_clk;
+  inout [4:0]QSPI_rtl_tri_io;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -107,7 +107,26 @@ module design_1_wrapper
   wire [1:1]MISC_rtl_tri_t_1;
   wire [2:2]MISC_rtl_tri_t_2;
   wire [3:3]MISC_rtl_tri_t_3;
-  wire test_clk;
+  wire [0:0]QSPI_rtl_tri_i_0;
+  wire [1:1]QSPI_rtl_tri_i_1;
+  wire [2:2]QSPI_rtl_tri_i_2;
+  wire [3:3]QSPI_rtl_tri_i_3;
+  wire [4:4]QSPI_rtl_tri_i_4;
+  wire [0:0]QSPI_rtl_tri_io_0;
+  wire [1:1]QSPI_rtl_tri_io_1;
+  wire [2:2]QSPI_rtl_tri_io_2;
+  wire [3:3]QSPI_rtl_tri_io_3;
+  wire [4:4]QSPI_rtl_tri_io_4;
+  wire [0:0]QSPI_rtl_tri_o_0;
+  wire [1:1]QSPI_rtl_tri_o_1;
+  wire [2:2]QSPI_rtl_tri_o_2;
+  wire [3:3]QSPI_rtl_tri_o_3;
+  wire [4:4]QSPI_rtl_tri_o_4;
+  wire [0:0]QSPI_rtl_tri_t_0;
+  wire [1:1]QSPI_rtl_tri_t_1;
+  wire [2:2]QSPI_rtl_tri_t_2;
+  wire [3:3]QSPI_rtl_tri_t_3;
+  wire [4:4]QSPI_rtl_tri_t_4;
 
   IOBUF MISC_rtl_tri_iobuf_0
        (.I(MISC_rtl_tri_o_0),
@@ -129,6 +148,31 @@ module design_1_wrapper
         .IO(MISC_rtl_tri_io[3]),
         .O(MISC_rtl_tri_i_3),
         .T(MISC_rtl_tri_t_3));
+  IOBUF QSPI_rtl_tri_iobuf_0
+       (.I(QSPI_rtl_tri_o_0),
+        .IO(QSPI_rtl_tri_io[0]),
+        .O(QSPI_rtl_tri_i_0),
+        .T(QSPI_rtl_tri_t_0));
+  IOBUF QSPI_rtl_tri_iobuf_1
+       (.I(QSPI_rtl_tri_o_1),
+        .IO(QSPI_rtl_tri_io[1]),
+        .O(QSPI_rtl_tri_i_1),
+        .T(QSPI_rtl_tri_t_1));
+  IOBUF QSPI_rtl_tri_iobuf_2
+       (.I(QSPI_rtl_tri_o_2),
+        .IO(QSPI_rtl_tri_io[2]),
+        .O(QSPI_rtl_tri_i_2),
+        .T(QSPI_rtl_tri_t_2));
+  IOBUF QSPI_rtl_tri_iobuf_3
+       (.I(QSPI_rtl_tri_o_3),
+        .IO(QSPI_rtl_tri_io[3]),
+        .O(QSPI_rtl_tri_i_3),
+        .T(QSPI_rtl_tri_t_3));
+  IOBUF QSPI_rtl_tri_iobuf_4
+       (.I(QSPI_rtl_tri_o_4),
+        .IO(QSPI_rtl_tri_io[4]),
+        .O(QSPI_rtl_tri_i_4),
+        .T(QSPI_rtl_tri_t_4));
   design_1 design_1_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -158,5 +202,7 @@ module design_1_wrapper
         .MISC_rtl_tri_i({MISC_rtl_tri_i_3,MISC_rtl_tri_i_2,MISC_rtl_tri_i_1,MISC_rtl_tri_i_0}),
         .MISC_rtl_tri_o({MISC_rtl_tri_o_3,MISC_rtl_tri_o_2,MISC_rtl_tri_o_1,MISC_rtl_tri_o_0}),
         .MISC_rtl_tri_t({MISC_rtl_tri_t_3,MISC_rtl_tri_t_2,MISC_rtl_tri_t_1,MISC_rtl_tri_t_0}),
-        .test_clk(test_clk));
+        .QSPI_rtl_tri_i({QSPI_rtl_tri_i_4,QSPI_rtl_tri_i_3,QSPI_rtl_tri_i_2,QSPI_rtl_tri_i_1,QSPI_rtl_tri_i_0}),
+        .QSPI_rtl_tri_o({QSPI_rtl_tri_o_4,QSPI_rtl_tri_o_3,QSPI_rtl_tri_o_2,QSPI_rtl_tri_o_1,QSPI_rtl_tri_o_0}),
+        .QSPI_rtl_tri_t({QSPI_rtl_tri_t_4,QSPI_rtl_tri_t_3,QSPI_rtl_tri_t_2,QSPI_rtl_tri_t_1,QSPI_rtl_tri_t_0}));
 endmodule

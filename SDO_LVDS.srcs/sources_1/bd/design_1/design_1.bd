@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x444AEDD0E1BDA56B",
+      "boundary_crc": "0xA405A65778D4F7DD",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../SDO_LVDS.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -26,7 +26,9 @@
         "m02_couplers": {
           "auto_pc": ""
         },
-        "m03_couplers": {},
+        "m03_couplers": {
+          "auto_pc": ""
+        },
         "m04_couplers": {},
         "m05_couplers": {},
         "m06_couplers": {},
@@ -37,7 +39,8 @@
       "util_ds_buf_0": "",
       "LVDS_Tx_0": "",
       "util_ds_buf_1": "",
-      "Misc_LVDS_GPIO": ""
+      "Misc_LVDS_GPIO": "",
+      "QSPI_GPIO": ""
     },
     "interface_ports": {
       "DDR": {
@@ -232,35 +235,34 @@
             "right": "0"
           }
         }
+      },
+      "QSPI_rtl": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
+        "port_maps": {
+          "TRI_I": {
+            "physical_name": "QSPI_rtl_tri_i",
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "TRI_O": {
+            "physical_name": "QSPI_rtl_tri_o",
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "TRI_T": {
+            "physical_name": "QSPI_rtl_tri_t",
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
       }
     },
     "ports": {
-      "test_clk": {
-        "type": "clk",
-        "direction": "O",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "design_1_processing_system7_0_0_FCLK_CLK1",
-            "value_src": "default_prop"
-          },
-          "FREQ_HZ": {
-            "value": "25000000",
-            "value_src": "user_prop"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
-      },
       "LVDS_CLK_P": {
         "type": "clk",
         "direction": "O",
@@ -2459,8 +2461,8 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "29",
-                "xci_name": "design_1_auto_pc_3",
-                "xci_path": "ip\\design_1_auto_pc_3\\design_1_auto_pc_3.xci",
+                "xci_name": "design_1_auto_pc_4",
+                "xci_path": "ip\\design_1_auto_pc_4\\design_1_auto_pc_4.xci",
                 "inst_hier_path": "ps7_0_axi_periph/s00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -2863,11 +2865,57 @@
                 "direction": "I"
               }
             },
+            "components": {
+              "auto_pc": {
+                "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+                "ip_revision": "29",
+                "xci_name": "design_1_auto_pc_3",
+                "xci_path": "ip\\design_1_auto_pc_3\\design_1_auto_pc_3.xci",
+                "inst_hier_path": "ps7_0_axi_periph/m03_couplers/auto_pc",
+                "parameters": {
+                  "MI_PROTOCOL": {
+                    "value": "AXI4LITE"
+                  },
+                  "SI_PROTOCOL": {
+                    "value": "AXI4"
+                  }
+                },
+                "interface_ports": {
+                  "S_AXI": {
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                    "mode": "Slave",
+                    "bridges": [
+                      "M_AXI"
+                    ]
+                  }
+                }
+              }
+            },
             "interface_nets": {
-              "m03_couplers_to_m03_couplers": {
+              "auto_pc_to_m03_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
+                ]
+              },
+              "m03_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
-                  "M_AXI"
+                  "auto_pc/S_AXI"
+                ]
+              }
+            },
+            "nets": {
+              "S_ACLK_1": {
+                "ports": [
+                  "S_ACLK",
+                  "auto_pc/aclk"
+                ]
+              },
+              "S_ARESETN_1": {
+                "ports": [
+                  "S_ARESETN",
+                  "auto_pc/aresetn"
                 ]
               }
             }
@@ -3413,6 +3461,27 @@
             "value": "true"
           }
         }
+      },
+      "QSPI_GPIO": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "ip_revision": "31",
+        "xci_name": "design_1_axi_gpio_0_1",
+        "xci_path": "ip\\design_1_axi_gpio_0_1\\design_1_axi_gpio_0_1.xci",
+        "inst_hier_path": "QSPI_GPIO",
+        "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "0"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "5"
+          },
+          "GPIO_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -3420,6 +3489,12 @@
         "interface_ports": [
           "MISC_rtl",
           "Misc_LVDS_GPIO/GPIO"
+        ]
+      },
+      "QSPI_GPIO_GPIO": {
+        "interface_ports": [
+          "QSPI_rtl",
+          "QSPI_GPIO/GPIO"
         ]
       },
       "processing_system7_0_DDR": {
@@ -3456,6 +3531,12 @@
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
           "Misc_LVDS_GPIO/S_AXI"
+        ]
+      },
+      "ps7_0_axi_periph_M03_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M03_AXI",
+          "QSPI_GPIO/S_AXI"
         ]
       }
     },
@@ -3495,13 +3576,8 @@
           "rst_ps7_0_100M/slowest_sync_clk",
           "ClockDivider_LVDS/s00_axi_aclk",
           "Misc_LVDS_GPIO/s_axi_aclk",
-          "LVDS_Tx_0/s00_axi_aclk"
-        ]
-      },
-      "processing_system7_0_FCLK_CLK1": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK1",
-          "test_clk"
+          "LVDS_Tx_0/s00_axi_aclk",
+          "QSPI_GPIO/s_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -3530,7 +3606,8 @@
           "ps7_0_axi_periph/M07_ARESETN",
           "ClockDivider_LVDS/s00_axi_aresetn",
           "Misc_LVDS_GPIO/s_axi_aresetn",
-          "LVDS_Tx_0/s00_axi_aresetn"
+          "LVDS_Tx_0/s00_axi_aresetn",
+          "QSPI_GPIO/s_axi_aresetn"
         ]
       },
       "util_ds_buf_0_OBUF_DS_N": {
@@ -3580,6 +3657,11 @@
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/Misc_LVDS_GPIO/S_AXI/Reg",
                 "offset": "0x41200000",
+                "range": "64K"
+              },
+              "SEG_axi_gpio_0_Reg_1": {
+                "address_block": "/QSPI_GPIO/S_AXI/Reg",
+                "offset": "0x41210000",
                 "range": "64K"
               }
             }

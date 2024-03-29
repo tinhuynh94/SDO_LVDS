@@ -1,8 +1,0 @@
-18:07:33 **** Clean-only build of configuration Debug for project muxtest2_app_system ****
-make clean 
-rm -rf ./_sds
-rm -rf package
-rm -f system.bif
-
-18:07:33 Build Finished (took 176ms)
-

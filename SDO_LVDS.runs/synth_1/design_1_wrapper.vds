@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed Mar 27 13:53:24 2024
-# Process ID: 61108
+# Start of session at: Thu Mar 28 18:55:42 2024
+# Process ID: 66004
 # Current directory: C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/design_1_wrapper.vds
@@ -12,7 +12,7 @@
 # Running On: LAPTOP-4NG0TGNQ, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 12540 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 591.699 ; gain = 217.176
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 591.934 ; gain = 218.941
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/19165/Documents/Xilinx_Projects/ip_repo/LVDS_Tx_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/19165/Documents/Xilinx_Projects/ip_repo/ClockDivider_1_0'.
@@ -31,172 +31,182 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 64328
+INFO: [Synth 8-7075] Helper process launched with PID 69548
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1481.762 ; gain = 441.004
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1481.336 ; gain = 438.004
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/new/design_1_wrapper.vhd:49]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_0' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/new/design_1_wrapper.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:47]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_0' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:128]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_1' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/new/design_1_wrapper.vhd:117]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_2' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/new/design_1_wrapper.vhd:124]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_3' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/new/design_1_wrapper.vhd:131]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:13' bound to instance 'design_1_i' of component 'design_1' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/new/design_1_wrapper.vhd:138]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_1' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:135]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_2' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:142]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'MISC_rtl_tri_iobuf_3' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:149]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'QSPI_rtl_tri_iobuf_0' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:156]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'QSPI_rtl_tri_iobuf_1' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:163]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'QSPI_rtl_tri_iobuf_2' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:170]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'QSPI_rtl_tri_iobuf_3' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:177]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'QSPI_rtl_tri_iobuf_4' of component 'IOBUF' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:184]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:13' bound to instance 'design_1_i' of component 'design_1' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:191]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ClockDivider_0_1' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_ClockDivider_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ClockDivider_0_1' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_ClockDivider_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'clkdiv' of module 'design_1_ClockDivider_0_1' is unconnected for instance 'ClockDivider_LVDS' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:212]
-WARNING: [Synth 8-7023] instance 'ClockDivider_LVDS' of module 'design_1_ClockDivider_0_1' has 23 connections declared, but only 22 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:212]
-INFO: [Synth 8-6157] synthesizing module 'design_1_LVDS_Tx_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_LVDS_Tx_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_LVDS_Tx_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_LVDS_Tx_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:283]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:283]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:283]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:283]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:283]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 70 connections declared, but only 65 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:283]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:536]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:2883]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:2883]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3193]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3193]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3503]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3742]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3742]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 60 connections declared, but only 58 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3742]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3503]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3803]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3803]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4089]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4089]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_VQEDA7' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4375]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_VQEDA7' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4375]
-INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_16EQN6L' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4661]
-INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4661]
-INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_X61OAK' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4947]
-INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_X61OAK' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4947]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5233]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_3_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5548]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5548]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_3' has 79 connections declared, but only 77 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5548]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5233]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:536]
-WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M04_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M05_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M06_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M06_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M06_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M06_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M06_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-WARNING: [Synth 8-7071] port 'M06_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ClockDivider_0_1' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_ClockDivider_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ClockDivider_0_1' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_ClockDivider_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'clkdiv' of module 'design_1_ClockDivider_0_1' is unconnected for instance 'ClockDivider_LVDS' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:237]
+WARNING: [Synth 8-7023] instance 'ClockDivider_LVDS' of module 'design_1_ClockDivider_0_1' has 23 connections declared, but only 22 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:237]
+INFO: [Synth 8-6157] synthesizing module 'design_1_LVDS_Tx_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_LVDS_Tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_LVDS_Tx_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_LVDS_Tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:331]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:331]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:331]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:331]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:331]
+WARNING: [Synth 8-7071] port 'FCLK_CLK1' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:331]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 70 connections declared, but only 64 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:331]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:589]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:2826]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:2826]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3136]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3136]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3446]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3685]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3685]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 60 connections declared, but only 58 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3685]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3446]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3746]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3985]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3985]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_3' has 60 connections declared, but only 58 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3985]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:3746]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4046]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4046]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_VQEDA7' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4332]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_VQEDA7' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4332]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_16EQN6L' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4618]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4618]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_X61OAK' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4904]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_X61OAK' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:4904]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5190]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_auto_pc_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5505]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5505]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_4' has 79 connections declared, but only 77 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5505]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:5190]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:589]
+WARNING: [Synth 8-7071] port 'M04_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M04_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M05_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awlen' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awlock' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awqos' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awregion' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awsize' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_wlast' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M06_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M07_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M07_AXI_arburst' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+WARNING: [Synth 8-7071] port 'M07_AXI_arcache' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
 INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 308 connections declared, but only 168 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:349]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 7 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:518]
-INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_1_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_1_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-61108-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 286 connections declared, but only 174 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:396]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 7 given [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:571]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_1_0' [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_1_0' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/.Xil/Vivado-66004-LAPTOP-4NG0TGNQ/realtime/design_1_util_ds_buf_1_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/new/design_1_wrapper.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:47]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m07_couplers_imp_X61OAK is either unconnected or has no load
@@ -217,8 +227,6 @@ WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_17KQ732 is either
 WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_17KQ732 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_YFYJ3U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_14WQB4R is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_14WQB4R is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_XU9C55 is either unconnected or has no load
@@ -226,19 +234,19 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_XU9C55 is eith
 WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_15SPJYW is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_15SPJYW is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1603.285 ; gain = 562.527
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1603.051 ; gain = 559.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1603.285 ; gain = 562.527
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1603.051 ; gain = 559.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1603.285 ; gain = 562.527
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1603.051 ; gain = 559.719
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1603.285 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1603.051 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -248,26 +256,30 @@ Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen
 Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
-Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc'
-Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
-Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/m03_couplers/auto_pc'
 Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
-Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_ClockDivider_0_1/design_1_ClockDivider_0_1/design_1_ClockDivider_0_1_in_context.xdc] for cell 'design_1_i/ClockDivider_LVDS'
-Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_ClockDivider_0_1/design_1_ClockDivider_0_1/design_1_ClockDivider_0_1_in_context.xdc] for cell 'design_1_i/ClockDivider_LVDS'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_ClockDivider_0_1/design_1_ClockDivider_0_1/design_1_ClockDivider_0_2_in_context.xdc] for cell 'design_1_i/ClockDivider_LVDS'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_ClockDivider_0_1/design_1_ClockDivider_0_1/design_1_ClockDivider_0_2_in_context.xdc] for cell 'design_1_i/ClockDivider_LVDS'
 Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
 Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
 Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_LVDS_Tx_0_0/design_1_LVDS_Tx_0_0/design_1_LVDS_Tx_0_0_in_context.xdc] for cell 'design_1_i/LVDS_Tx_0'
 Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_LVDS_Tx_0_0/design_1_LVDS_Tx_0_0/design_1_LVDS_Tx_0_0_in_context.xdc] for cell 'design_1_i/LVDS_Tx_0'
 Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/design_1_util_ds_buf_1_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
 Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_1_0/design_1_util_ds_buf_1_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
-Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/Misc_LVDS_GPIO'
-Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/Misc_LVDS_GPIO'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/Misc_LVDS_GPIO'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/Misc_LVDS_GPIO'
+Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/QSPI_GPIO'
+Finished Parsing XDC File [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/QSPI_GPIO'
 Parsing XDC File [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc]
 WARNING: [Vivado 12-584] No ports matched 'sws_8bits_tri_i[0]'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:1]
 WARNING: [Vivado 12-584] No ports matched 'sws_8bits_tri_i[1]'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:2]
@@ -296,6 +308,9 @@ WARNING: [Vivado 12-584] No ports matched 'sws_8bits_tri_i[*]'. [C:/Users/19165/
 WARNING: [Vivado 12-584] No ports matched 'btns_5bits_tri_i[*]'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:26]
 WARNING: [Vivado 12-584] No ports matched 'leds_8bits_tri_o[*]'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:28]
 WARNING: [Vivado 12-584] No ports matched 'sws_8bits_tri_i[*]'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'test_clk'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'test_clk'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'QSPI_rtl_tri_io[5]'. [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc:59]
 Finished Parsing XDC File [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/constrs_1/new/my_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -304,23 +319,23 @@ Parsing XDC File [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.run
 Finished Parsing XDC File [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1637.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1660.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1637.852 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1660.844 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Constraint Validation : Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -600,6 +615,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ClockDivider_LVDS. (constraint file  auto generated constraint).
@@ -607,11 +623,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_0. (constr
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/LVDS_Tx_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Misc_LVDS_GPIO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/QSPI_GPIO. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -650,25 +667,25 @@ WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_ps7_0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port M07_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M07_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:36 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:36 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:36 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -686,37 +703,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -731,13 +748,15 @@ Report BlackBoxes:
 |3     |design_1_auto_pc_1              |         1|
 |4     |design_1_auto_pc_2              |         1|
 |5     |design_1_auto_pc_3              |         1|
-|6     |design_1_ClockDivider_0_1       |         1|
-|7     |design_1_LVDS_Tx_0_0            |         1|
-|8     |design_1_axi_gpio_0_0           |         1|
-|9     |design_1_processing_system7_0_0 |         1|
-|10    |design_1_rst_ps7_0_100M_0       |         1|
-|11    |design_1_util_ds_buf_0_0        |         1|
-|12    |design_1_util_ds_buf_1_0        |         1|
+|6     |design_1_auto_pc_4              |         1|
+|7     |design_1_ClockDivider_0_1       |         1|
+|8     |design_1_LVDS_Tx_0_0            |         1|
+|9     |design_1_axi_gpio_0_0           |         1|
+|10    |design_1_axi_gpio_0_1           |         1|
+|11    |design_1_processing_system7_0_0 |         1|
+|12    |design_1_rst_ps7_0_100M_0       |         1|
+|13    |design_1_util_ds_buf_0_0        |         1|
+|14    |design_1_util_ds_buf_1_0        |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
@@ -746,39 +765,38 @@ Report Cell Usage:
 +------+------------------------------+------+
 |1     |design_1_ClockDivider_0       |     1|
 |2     |design_1_LVDS_Tx_0            |     1|
-|3     |design_1_auto_pc              |     4|
-|7     |design_1_axi_gpio_0           |     1|
-|8     |design_1_processing_system7_0 |     1|
-|9     |design_1_rst_ps7_0_100M       |     1|
-|10    |design_1_util_ds_buf_0        |     1|
-|11    |design_1_util_ds_buf_1        |     1|
-|12    |design_1_xbar                 |     1|
-|13    |IOBUF                         |     4|
-|14    |OBUF                          |     1|
+|3     |design_1_auto_pc              |     5|
+|8     |design_1_axi_gpio_0           |     2|
+|10    |design_1_processing_system7_0 |     1|
+|11    |design_1_rst_ps7_0_100M       |     1|
+|12    |design_1_util_ds_buf_0        |     1|
+|13    |design_1_util_ds_buf_1        |     1|
+|14    |design_1_xbar                 |     1|
+|15    |IOBUF                         |     9|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:39 . Memory (MB): peak = 1637.852 ; gain = 562.527
-Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.852 ; gain = 597.094
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1660.844 ; gain = 559.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.844 ; gain = 617.512
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1637.852 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1660.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1637.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1660.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
 
-Synth Design complete | Checksum: 67bf0705
+Synth Design complete | Checksum: 8ffd972e
 INFO: [Common 17-83] Releasing license: Synthesis
-83 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+92 Infos, 182 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:50 . Memory (MB): peak = 1637.852 ; gain = 1018.137
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1637.852 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:45 . Memory (MB): peak = 1660.844 ; gain = 1041.309
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1660.844 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 13:54:32 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 18:56:46 2024...

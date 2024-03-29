@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Mar 11 18:09:28 2024
+-- Date        : Thu Mar 28 18:54:59 2024
 -- Host        : LAPTOP-4NG0TGNQ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_util_ds_buf_1_0 -prefix
 --               design_1_util_ds_buf_1_0_ design_1_util_ds_buf_0_0_stub.vhdl

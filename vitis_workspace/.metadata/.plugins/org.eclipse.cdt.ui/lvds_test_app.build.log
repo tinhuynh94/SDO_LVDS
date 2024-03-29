@@ -1,10 +1,43 @@
-14:03:07 **** Incremental Build of configuration Debug for project lvds_test_app ****
+16:57:47 **** Incremental Build of configuration Debug for project lvds_test_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/lvds_test_wrapper/export/lvds_test_wrapper/sw/lvds_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:25:
+C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/lvds_test_wrapper/export/lvds_test_wrapper/sw/lvds_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/lvds_test_wrapper/export/lvds_test_wrapper/sw/lvds_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/helloworld.c:124:13: warning: 'ChangeAsicClkDivision' declared 'static' but never defined [-Wunused-function]
+  124 | static void ChangeAsicClkDivision(u8 divSetting);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:125:13: warning: 'ChangeFlashClkDivision' declared 'static' but never defined [-Wunused-function]
+  125 | static void ChangeFlashClkDivision(u8 divSetting);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/lvds_test_wrapper/export/lvds_test_wrapper/sw/lvds_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lvds_test_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/lvds_test_wrapper/export/lvds_test_wrapper/sw/lvds_test_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lvds_test_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lvds_test_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lvds_test_app.elf  |tee "lvds_test_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38111	   1992	  22760	  62863	   f58f	lvds_test_app.elf
+'Finished building: lvds_test_app.elf.size'
+' '
 
-14:03:07 Build Finished (took 298ms)
+16:57:49 Build Finished (took 1s.868ms)
 

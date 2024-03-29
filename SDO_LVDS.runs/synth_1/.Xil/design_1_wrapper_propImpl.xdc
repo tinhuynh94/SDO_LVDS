@@ -61,8 +61,10 @@ set_property src_info {type:XDC file:1 line:40 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN T16 [get_ports LVDS_DATA_P]
 set_property src_info {type:XDC file:1 line:42 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T17 [get_ports LVDS_DATA_N]
+set_property src_info {type:XDC file:1 line:44 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS25 [get_ports test_clk]
 set_property src_info {type:XDC file:1 line:45 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN P20 [get_ports test_clk]
+set_property PACKAGE_PIN R21 [get_ports test_clk]
 set_property src_info {type:XDC file:1 line:48 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN C15 [get_ports MISC_rtl_tri_io[0]]; # VProg Ctrl
 set_property src_info {type:XDC file:1 line:49 export:INPUT save:INPUT read:READ} [current_design]
@@ -71,3 +73,15 @@ set_property src_info {type:XDC file:1 line:50 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN J22 [get_ports MISC_rtl_tri_io[2]]; # BUSY
 set_property src_info {type:XDC file:1 line:51 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J21 [get_ports MISC_rtl_tri_io[3]]; # DTB
+set_property src_info {type:XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G20 [get_ports QSPI_rtl_tri_io[0]]; # SD0
+set_property src_info {type:XDC file:1 line:55 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN K21 [get_ports QSPI_rtl_tri_io[1]]; # SD1
+set_property src_info {type:XDC file:1 line:56 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P21 [get_ports QSPI_rtl_tri_io[2]]; # SD2
+set_property src_info {type:XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P20 [get_ports QSPI_rtl_tri_io[3]]; # SD3
+set_property src_info {type:XDC file:1 line:58 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G19 [get_ports QSPI_rtl_tri_io[4]]; # SCK
+set_property src_info {type:XDC file:1 line:59 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G21 [get_ports QSPI_rtl_tri_io[5]]; # CSN

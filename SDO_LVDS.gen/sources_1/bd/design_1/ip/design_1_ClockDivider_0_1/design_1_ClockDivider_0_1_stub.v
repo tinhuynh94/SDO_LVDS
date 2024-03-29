@@ -2,11 +2,11 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Mar 15 17:53:11 2024
+// Date        : Thu Mar 28 14:45:13 2024
 // Host        : LAPTOP-4NG0TGNQ running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top design_1_ClockDivider_0_1 -prefix
-//               design_1_ClockDivider_0_1_ design_1_ClockDivider_0_1_stub.v
-// Design      : design_1_ClockDivider_0_1
+//               design_1_ClockDivider_0_1_ design_1_ClockDivider_0_2_stub.v
+// Design      : design_1_ClockDivider_0_2
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1
 // --------------------------------------------------------------------------------

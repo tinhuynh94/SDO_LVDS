@@ -2,11 +2,11 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Fri Mar 15 17:53:11 2024
+-- Date        : Thu Mar 28 14:45:13 2024
 -- Host        : LAPTOP-4NG0TGNQ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_1_ClockDivider_0_1 -prefix
---               design_1_ClockDivider_0_1_ design_1_ClockDivider_0_1_sim_netlist.vhdl
--- Design      : design_1_ClockDivider_0_1
+--               design_1_ClockDivider_0_1_ design_1_ClockDivider_0_2_sim_netlist.vhdl
+-- Design      : design_1_ClockDivider_0_2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z020clg484-1
@@ -2125,7 +2125,7 @@ entity design_1_ClockDivider_0_1 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_1_ClockDivider_0_1 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_ClockDivider_0_1 : entity is "design_1_ClockDivider_0_1,ClockDivider_v1_0,{}";
+  attribute CHECK_LICENSE_TYPE of design_1_ClockDivider_0_1 : entity is "design_1_ClockDivider_0_2,ClockDivider_v1_0,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_ClockDivider_0_1 : entity is "yes";
   attribute X_CORE_INFO : string;
