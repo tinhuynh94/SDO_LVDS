@@ -1,6 +1,6 @@
-16:57:28 **** Build of project lvds_test_wrapper ****
-buildplatform.bat 54031 lvds_test_wrapper  
-XSDB Server Channel: tcfchan#6
+18:21:17 **** Build of project lvds_test_wrapper ****
+buildplatform.bat 51298 lvds_test_wrapper  
+xsct% XSDB Server Channel: tcfchan#35
 Building the zynq_fsbl application.
 make: Entering directory 'C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/lvds_test_wrapper/zynq_fsbl/zynq_fs
 bl_bsp'
@@ -145,7 +145,7 @@ make -C ps7_cortexa9_0/libsrc/ClockDivider_v1_0/src -s libs  "SHELL=CMD" "COMPIL
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-"Compiling ClockDivider..."
+"<CustomIP_name>..."
 
 ClockDivider_selftest.c: In function 'CLOCKDIVIDER_Reg_SelfTest':
 ClockDivider_selftest.c:52:68: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
@@ -161,7 +161,7 @@ make -C ps7_cortexa9_0/libsrc/LVDS_Tx_v1_0/src -s libs  "SHELL=CMD" "COMPILER=ar
 ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
 tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-"Compiling LVDS_Tx..."
+"<CustomIP_name>..."
 
 LVDS_Tx_selftest.c: In function 'LVDS_TX_Reg_SelfTest':
 LVDS_Tx_selftest.c:52:63: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
@@ -188,11 +188,11 @@ bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLA
 
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
-
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
 -eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
 ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
 
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
 abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
@@ -386,11 +386,11 @@ files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 "Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
 
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
-
 make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
 HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
 les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
 
 make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
 " "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
@@ -644,7 +644,7 @@ make -C ps7_cortexa9_0/libsrc/ClockDivider_v1_0/src -s libs  "SHELL=CMD" "COMPIL
 as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
 ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-"Compiling ClockDivider..."
+"<CustomIP_name>..."
 
 ClockDivider_selftest.c: In function 'CLOCKDIVIDER_Reg_SelfTest':
 ClockDivider_selftest.c:52:68: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
@@ -660,7 +660,7 @@ make -C ps7_cortexa9_0/libsrc/LVDS_Tx_v1_0/src -s libs  "SHELL=CMD" "COMPILER=ar
 ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
 tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
-"Compiling LVDS_Tx..."
+"<CustomIP_name>..."
 
 LVDS_Tx_selftest.c: In function 'LVDS_TX_Reg_SelfTest':
 LVDS_Tx_selftest.c:52:63: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
@@ -741,11 +741,11 @@ tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
 
 "Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
 
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
-
 make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
  "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
 artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
 
 make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
 s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
@@ -946,5 +946,5 @@ g.o ps7_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_cortexa9
 'Finished building libraries'
 
 
-16:57:47 Build Finished (took 19s.517ms)
+18:21:43 Build Finished (took 26s.227ms)
 
