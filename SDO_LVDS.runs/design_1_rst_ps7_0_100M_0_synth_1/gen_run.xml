@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <GenRun Id="design_1_rst_ps7_0_100M_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1711572612">
+=======
+<GenRun Id="design_1_rst_ps7_0_100M_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1712188193">
+>>>>>>> Stashed changes
   <File Type="PA-TCL" Name="design_1_rst_ps7_0_100M_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_rst_ps7_0_100M_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_rst_ps7_0_100M_0_reports.tcl"/>
@@ -51,6 +55,10 @@
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="synth_1"/>
         <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+<<<<<<< Updated upstream
+=======
+        <Attr Name="UsedInSteps" Val="synth_1_copy_2"/>
+>>>>>>> Stashed changes
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>

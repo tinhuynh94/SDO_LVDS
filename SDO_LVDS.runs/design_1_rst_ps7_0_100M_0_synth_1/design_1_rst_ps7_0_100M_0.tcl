@@ -70,6 +70,10 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_rst_ps7_0_100M_0_synth_1" START { ROLLUP_AUTO }
+<<<<<<< Updated upstream
+=======
+set_param chipscope.maxJobs 3
+>>>>>>> Stashed changes
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -83,7 +87,11 @@ set_property webtalk.parent_dir C:/Users/19165/Documents/Xilinx_Projects/SDO_LVD
 set_property parent.project_path C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
+<<<<<<< Updated upstream
 set_property target_language Verilog [current_project]
+=======
+set_property target_language VHDL [current_project]
+>>>>>>> Stashed changes
 set_property board_part digilentinc.com:zedboard:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/Users/19165/Documents/Xilinx_Projects/ip_repo/LVDS_Tx_1_0

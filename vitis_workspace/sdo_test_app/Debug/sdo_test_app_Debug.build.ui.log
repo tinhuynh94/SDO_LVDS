@@ -1,0 +1,41 @@
+2024-04-04T20:05:30.831826100255-20:05:30 **** Incremental Build of configuration Debug for project sdo_test_app ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-In file included from ../src/helloworld.c:25:
+000/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h102-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000-  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-      |  ^~~~~~~
+000/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h103-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000-  103 | #warning  Please refer the Standalone BSP UG647 for further details
+000-      |  ^~~~~~~
+000/sdo_test_app/src/helloworld.c162-1-1'setQspiClk' declared 'static' but never defined [-Wunused-function]1-../src/helloworld.c:162:13: warning: 'setQspiClk' declared 'static' but never defined [-Wunused-function]
+000-  162 | static void setQspiClk(u8 clkState);
+000-      |             ^~~~~~~~~~
+000/sdo_test_app/src/helloworld.c844-1-1'SetTimerDuration' defined but not used [-Wunused-function]1SetTimerDuration../src/helloworld.c:844:6: warning: 'SetTimerDuration' defined but not used [-Wunused-function]
+000-  844 | void SetTimerDuration(XInterval num10nsecCounts, u8 prescalar)
+000-      |      ^~~~~~~~~~~~~~~~
+000/sdo_test_app/src/helloworld.c751-1-1'ChangeLvdsClkDivision' defined but not used [-Wunused-function]1ChangeLvdsClkDivision../src/helloworld.c:751:6: warning: 'ChangeLvdsClkDivision' defined but not used [-Wunused-function]
+000-  751 | void ChangeLvdsClkDivision(u8 divSetting)
+000-      |      ^~~~~~~~~~~~~~~~~~~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building target: sdo_test_app.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "sdo_test_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: sdo_test_app.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size sdo_test_app.elf  |tee "sdo_test_app.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  47623	   2080	  22872	  72575	  11b7f	sdo_test_app.elf
+000-'Finished building: sdo_test_app.elf.size'
+000-' '
+00255-
+20:05:31 Build Finished (took 1s.67ms)
+
