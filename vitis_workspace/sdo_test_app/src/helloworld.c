@@ -34,43 +34,6 @@
 
 
 //----------------------------------------
-// commands that can be received from the python application
-//
-#define CMD_SET_QSPI_CLK_DIV  	       0x20
-#define CMD_GET_QSPI_CLK_DIV           0x21
-#define CMD_WRITE_QSPI                 0x22
-#define CMD_READ_QSPI                  0x23
-#define CMD_SET_LVDS_CLK_DIV           0x24
-#define CMD_GET_LVDS_CLK_DIV           0x25
-#define CMD_WRITE_LVDS        		   0x26
-#define CMD_TOGGLE_LVDS_VPROG          0x27
-#define CMD_TOGGLE_LVDS_RESET          0x28
-#define CMD_TOGGLE_LVDS_DTB            0x29
-#define CMD_PROG_FUSES                 0x2A
-#define CMD_READ_FUSES                 0x2B
-//----------------------------------------
-
-
-//----------------------------------------
-// responses that the zedboard will send back over UART
-//
-#define RESPONSE_QSPI_DONE             0x80
-#define RESPONSE_LVDS_DONE             0x81
-#define RESPONSE_FUSE_PROG_DONE        0x82
-//----------------------------------------
-
-
-//----------------------------------------
-// bit masks
-//
-#define LVDS_VPROG_MASK                0b0001
-#define LVDS_RESET_MASK                0b0010
-#define LVDS_BUSY_MASK                 0b0100
-#define LVDS_DTB_MASK                  0b1000
-//----------------------------------------
-
-
-//----------------------------------------
 // Macros (Inline Functions) Definitions
 //
 #define XAxi_ReadReg	Xil_In32
@@ -93,6 +56,27 @@
 
 
 //----------------------------------------
+// Bit definitions
+#define BIT_0			1
+#define BIT_1			2
+#define BIT_2			4
+#define BIT_3			8
+#define BIT_4			16
+#define BIT_5			32
+#define BIT_6			64
+#define BIT_7			128
+#define BIT_8			256
+#define BIT_9			512
+#define BIT_10			1024
+#define BIT_11			2048
+#define BIT_12			4096
+#define BIT_13			8192
+#define BIT_14			16384
+#define BIT_15			32768
+//----------------------------------------
+
+
+//----------------------------------------
 // for UartPs
 //
 #define INTC				XScuGic
@@ -102,15 +86,6 @@
 #define UART_BASEADDR		XPAR_XUARTPS_0_BASEADDR
 #define INTC_DEVICE_ID		XPAR_SCUGIC_0_DEVICE_ID
 #define RX_BUFFER_SIZE	30
-//----------------------------------------
-
-
-//----------------------------------------
-// state machine bit definitions
-//
-/*#define STATE_LED_RUNNING		0x01
-#define	STATE_UPDATE_CONDITIONS	0x02
-#define STATE_SERVICE_UART		0x04*/
 //----------------------------------------
 
 
@@ -176,24 +151,7 @@ u16 numUartBytesReceived;
 
 
 //----------------------------------------
-// Constants
-#define BIT_0			1
-#define BIT_1			2
-#define BIT_2			4
-#define BIT_3			8
-#define BIT_4			16
-#define BIT_5			32
-#define BIT_6			64
-#define BIT_7			128
-#define BIT_8			256
-#define BIT_9			512
-#define BIT_10			1024
-#define BIT_11			2048
-#define BIT_12			4096
-#define BIT_13			8192
-#define BIT_14			16384
-#define BIT_15			32768
-//
+// QSPI pins
 #define QSPI_DIO_0		BIT_0
 #define QSPI_DIO_1		BIT_1
 #define QSPI_DIO_2		BIT_2
@@ -201,13 +159,26 @@ u16 numUartBytesReceived;
 #define QSPI_CLK_BIT	BIT_4
 #define QSPI_CSB		BIT_5
 //
+// QSPI-specific commands
 #define QSPI_CMD_REG_READ	5
 #define QSPI_CMD_REG_WRITE	4
 #define QSPI_CMD_SRAM_READ	3
 #define QSPI_CMD_SRAM_WRITE	2
 #define QSPI_CMD_COL_READ	9
 #define QSPI_CMD_COL_WRITE	8
-//
+//----------------------------------------
+
+
+//----------------------------------------
+// bit masks
+#define LVDS_VPROG_MASK                BIT_0
+#define LVDS_RESET_MASK                BIT_1
+#define LVDS_BUSY_MASK                 BIT_2
+#define LVDS_DTB_MASK                  BIT_3
+//----------------------------------------
+
+
+//----------------------------------------
 // possible states for main while loop used to drive actions
 #define STATE_SERVICE_UART			0x01
 #define STATE_SERVICE_QSPI			0x02
@@ -215,6 +186,43 @@ u16 numUartBytesReceived;
 // triple timer counter
 #define DELAY_TIMER_DEVICE_ID	XPAR_XTTCPS_0_DEVICE_ID
 #define DELAY_TIMER_INTERRUPT_ID	XPAR_XTTCPS_0_INTR
+//----------------------------------------
+
+
+//----------------------------------------
+// commands that can be received from the python application
+#define CMD_SET_QSPI_CLK_DIV  	       0x20
+#define CMD_GET_QSPI_CLK_DIV           0x21
+#define CMD_QSPI_WRITE_REG             0x22
+#define CMD_QSPI_READ_REG              0x23
+#define CMD_QSPI_WRITE_SRAM            0x24
+#define CMD_QSPI_READ_SRAM             0x25
+#define CMD_QSPI_WRITE_COL             0x26
+#define CMD_QSPI_READ_COL              0x27
+#define CMD_SET_LVDS_CLK_DIV           0x28
+#define CMD_GET_LVDS_CLK_DIV           0x29
+#define CMD_LVDS_WRITE        		   0x2A
+#define CMD_EN_LVDS_VPROG              0x2B
+#define CMD_DIS_LVDS_VPROG             0x2C
+#define CMD_EN_LVDS_RESET              0x2D
+#define CMD_DIS_LVDS_RESET             0x2E
+#define CMD_EN_LVDS_DTB                0x2F
+#define CMD_DIS_LVDS_DTB               0x30
+#define CMD_PROG_FUSES                 0x31
+#define CMD_READ_FUSES                 0x32
+#define CMD_EN_LEV_SHIFT               0x33
+#define CMD_DIS_LEV_SHIFT              0x34
+#define CMD_EN_CLK25                   0x35
+#define CMD_DIS_CLK25                  0x36
+//----------------------------------------
+
+
+//----------------------------------------
+// responses that the zedboard will send back over UART
+//
+#define RESPONSE_QSPI_DONE             0x80
+#define RESPONSE_LVDS_DONE             0x81
+#define RESPONSE_FUSE_PROG_DONE        0x82
 //----------------------------------------
 
 
@@ -472,10 +480,10 @@ void InitGPIO(void){
 
 	XGpio_SetDataDirection(&miscLvdsGpio, 1, 0b1100);
 			// 3rd argument: 1=input, 0=output
-			// Bit 0: VPROG CTRL (output from FPGA)
-			// Bit 1: RESET CTRL (output from FPGA)
-			// Bit 2: BUSY (input into FPGA)
 			// Bit 3: DTB (inout)
+			// Bit 2: BUSY (input into FPGA)
+			// Bit 1: RESET CTRL (output from FPGA)
+			// Bit 0: VPROG CTRL (output from FPGA)
 
 	//XGpio_DiscreteWrite(&miscLvdsGpio, GPIO_CHANNEL, 0b1111);
 
@@ -537,10 +545,10 @@ void ReadUartBytes(void){
 			ChangeQspiClkDivision(UartRxData[1]);
 			break;*/
 
-		case (CMD_WRITE_QSPI):
+		case (CMD_QSPI_WRITE_REG):
 			startQspiTransaction(QSPI_CMD_REG_WRITE, 0xAA5F, 0xAA);
 
-		case (CMD_WRITE_LVDS):
+		case (CMD_LVDS_WRITE):
 			//verify 2 address bytes, 1 data byte received after command byte
 			if (numBytesReceived<4){
 				return;
@@ -568,59 +576,40 @@ void ReadUartBytes(void){
 			//xil_printf("done\n");
 			break;
 
-		case (CMD_TOGGLE_LVDS_VPROG):
-			//verify toggle setting byte received after command byte
-			if (numBytesReceived<2){
-				return;
-			}
-
-			toggle = (int)UartRxData[1];
-			current = XGpio_DiscreteRead(&miscLvdsGpio,1); // current settings of each of the MISC bits
-			if (toggle){
-				new = current | LVDS_VPROG_MASK;
-			}
-			else{
-				new = current & ~LVDS_VPROG_MASK;
-			}
-
-			XGpio_DiscreteWrite(&miscLvdsGpio, 1, new);
+		case (CMD_EN_LVDS_VPROG):
+			current = XGpio_DiscreteRead(&miscLvdsGpio,GPIO_CHANNEL); // current settings of each of the MISC bits
+			new = current | LVDS_VPROG_MASK;
+			XGpio_DiscreteWrite(&miscLvdsGpio, GPIO_CHANNEL, 1);
 			break;
 
-		case (CMD_TOGGLE_LVDS_RESET):
-			//verify toggle setting byte received after command byte
-			if (numBytesReceived<2){
-				return;
-			}
-
-			toggle = (int)UartRxData[1];
-			current = XGpio_DiscreteRead(&miscLvdsGpio,1); // current settings of each of the MISC bits
-			if (toggle){
-				new = current | LVDS_RESET_MASK;
-			}
-			else{
-				new = current & ~LVDS_RESET_MASK;
-			}
-
-			XGpio_DiscreteWrite(&miscLvdsGpio, 1, new);
+		case (CMD_DIS_LVDS_VPROG):
+			current = XGpio_DiscreteRead(&miscLvdsGpio,GPIO_CHANNEL); // current settings of each of the MISC bits
+			new = current & ~LVDS_VPROG_MASK;
+			XGpio_DiscreteWrite(&miscLvdsGpio, GPIO_CHANNEL, 0);
 			break;
 
-		case (CMD_TOGGLE_LVDS_DTB):
-			//verify toggle setting byte received after command byte
-			if (numBytesReceived<2){
-				return;
-			}
+		case (CMD_EN_LVDS_RESET):
+			current = XGpio_DiscreteRead(&miscLvdsGpio,GPIO_CHANNEL); // current settings of each of the MISC bits
+			new = current | LVDS_RESET_MASK;
+			XGpio_DiscreteWrite(&miscLvdsGpio, GPIO_CHANNEL, new);
+			break;
 
-			toggle = (int)UartRxData[1];
+		case (CMD_DIS_LVDS_RESET):
 			current = XGpio_DiscreteRead(&miscLvdsGpio,1); // current settings of each of the MISC bits
-			XGpio_SetDataDirection(&miscLvdsGpio, 1, 0b0100); // set Bit 3 (DBT) to output
-			if (toggle){
-				new = current | LVDS_DTB_MASK;
-			}
-			else{
-				new = current & ~LVDS_DTB_MASK;
-			}
+			new = current & ~LVDS_RESET_MASK;
+			XGpio_DiscreteWrite(&miscLvdsGpio, GPIO_CHANNEL, new);
+			break;
 
-			XGpio_DiscreteWrite(&miscLvdsGpio, 1, new);
+		case (CMD_EN_LVDS_DTB):
+			current = XGpio_DiscreteRead(&miscLvdsGpio,GPIO_CHANNEL); // current settings of each of the MISC bits
+			new = current | LVDS_DTB_MASK;
+			XGpio_DiscreteWrite(&miscLvdsGpio, GPIO_CHANNEL, new);
+			break;
+
+		case (CMD_DIS_LVDS_DTB):
+			current = XGpio_DiscreteRead(&miscLvdsGpio,GPIO_CHANNEL); // current settings of each of the MISC bits
+			new = current & ~LVDS_DTB_MASK;
+			XGpio_DiscreteWrite(&miscLvdsGpio, GPIO_CHANNEL, new);
 			break;
 
 		case (CMD_PROG_FUSES):
@@ -831,9 +820,10 @@ void DelayTimerInterruptHandler(void *CallBackRef)
 
 		// stop timer if spi transaction has completed
 		if (spiClkEdgeNumber == numSpiClkEdgesInTransaction){
-			setQspiCsb(1);
-			spiClkEdgeNumber = 0;
 			XTtcPs_Stop(&DelayTimer);
+			setQspiCsb(1);			// chip select goes back high
+			spiClkEdgeNumber = 0;	// clear edge number counter
+			timerRunning = 0;		// clear flag to indicate spi transaction finished
 		}
 	}
 	else {
@@ -843,7 +833,6 @@ void DelayTimerInterruptHandler(void *CallBackRef)
 		 */
 		TimerErrorCount++;
 	}
-
 
 
 }
@@ -860,23 +849,6 @@ void setQspiCsb(u8 bitState){
 	else{
 		qspiOutputStates |= QSPI_CSB;		// store new CSB value
 		XGpio_DiscreteWrite(&QSPI_xGPIO, GPIO_CHANNEL, qspiOutputStates);
-	}
-}
-//------------------------------------------------------------
-
-
-//------------------------------------------------------------
-void setQspiClk(u8 clkState){
-	u32 portState;
-	portState = XGpio_DiscreteRead(&QSPI_xGPIO, GPIO_CHANNEL);
-
-	if (clkState == 0){
-		spiClkHigh = FALSE;
-		XGpio_DiscreteWrite(&QSPI_xGPIO, GPIO_CHANNEL, portState & ~QSPI_CLK_BIT);
-	}
-	else{
-		spiClkHigh = TRUE;
-		XGpio_DiscreteWrite(&QSPI_xGPIO, GPIO_CHANNEL, portState | QSPI_CLK_BIT);
 	}
 }
 //------------------------------------------------------------
@@ -905,6 +877,7 @@ void startQspiTransaction(u8 command, u16 address, u8 data){
 	/*
 	 *
 	 */
+	// set the globals used when timer expires and a clock edge is serviced
 	qspiCommand = command;
 	qspiAddress = address;
 	qspiData = data;
@@ -916,6 +889,10 @@ void startQspiTransaction(u8 command, u16 address, u8 data){
 	// delay after chip select goes low
 	for(delayTime=200; delayTime>0; delayTime--);
 
+	// clear out all data bits D0-D3
+	qspiOutputStates &= 0x30;
+	XGpio_DiscreteWrite(&QSPI_xGPIO, GPIO_CHANNEL, qspiOutputStates);
+
 	// set the first bit of the command before the clock is pulsed high
 	setQspiDataBit(QSPI_DIO_0, command & BIT_3);
 
@@ -925,7 +902,6 @@ void startQspiTransaction(u8 command, u16 address, u8 data){
 	// start the timer now that will take care of the rest of the clock pulses
 	timerRunning = 1;
 	XTtcPs_Start(&DelayTimer);
-
 }
 //------------------------------------------------------------
 
@@ -939,7 +915,6 @@ void serviceQspiClkEdge(void){
 	 * This function uses a counter incremented in the timer interrupt service routine
 	 * to find the state to set four QSPI data bits during the transaction
 	 */
-	numEdgeTimeoutsServiced++;	// for debug, remove later
 
 	switch (spiClkEdgeNumber){
 
@@ -948,6 +923,9 @@ void serviceQspiClkEdge(void){
 			if (qspiCommand & BIT_2){	// check if bit2 is high in command
 				qspiOutputStates |= QSPI_DIO_0;	// set DIO_0 outout high
 			}
+			else{
+				qspiOutputStates &= ~QSPI_DIO_0;	// set DIO_0 outout low
+			}
 			XGpio_DiscreteWrite(&QSPI_xGPIO, GPIO_CHANNEL, qspiOutputStates);
 			break;
 
@@ -955,12 +933,18 @@ void serviceQspiClkEdge(void){
 			if (qspiCommand & BIT_1){	// check if bit1 is high in command
 				qspiOutputStates |= QSPI_DIO_0;	// set DIO_0 output high
 			}
+			else{
+				qspiOutputStates &= ~QSPI_DIO_0;	// set DIO_0 outout low
+			}
 			XGpio_DiscreteWrite(&QSPI_xGPIO, GPIO_CHANNEL, qspiOutputStates);
 			break;
 
 		case (6):	// set DIO_0 with bit0 of command
 			if (qspiCommand & BIT_0){	// check if bit0 is high in command
 				qspiOutputStates |= QSPI_DIO_0;	// set DIO_0 output high
+			}
+			else{
+				qspiOutputStates &= ~QSPI_DIO_0;	// set DIO_0 outout low
 			}
 			XGpio_DiscreteWrite(&QSPI_xGPIO, GPIO_CHANNEL, qspiOutputStates);
 			break;
@@ -1079,6 +1063,7 @@ void serviceQspiClkEdge(void){
 	}
 }
 //------------------------------------------------------------
+
 
 //------------------------------------------------------------
 /*void ChangeQspiClkDivision(u8 divSetting)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="sdo_test_app" location="C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_app" platform="C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sdo_test_wrapper.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="sdo_test_app_system" sysConfig="sdo_test_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="97a5aac4b974410c77f20381472358b9">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1146948836">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.413815277" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

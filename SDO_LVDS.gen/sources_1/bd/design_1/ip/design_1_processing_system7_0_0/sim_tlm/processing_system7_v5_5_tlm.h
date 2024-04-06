@@ -144,6 +144,7 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_in<sc_dt::sc_bv<2> >  IRQ_F2P;
     sc_core::sc_out<bool> FCLK_CLK0;
     sc_core::sc_out<bool> FCLK_CLK1;
+    sc_core::sc_out<bool> FCLK_CLK2;
     sc_core::sc_out<bool> FCLK_RESET0_N;
     sc_core::sc_inout<sc_dt::sc_bv<54> >  MIO;
     sc_core::sc_inout<bool> DDR_CAS_n;
@@ -206,6 +207,7 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     // output pins FCLK_CLK0..3 are drived by these clocks
     sc_core::sc_clock FCLK_CLK0_clk;
     sc_core::sc_clock FCLK_CLK1_clk;
+    sc_core::sc_clock FCLK_CLK2_clk;
 
     
     //Method which is sentive to FCLK_CLK0_clk sc_clock object
@@ -214,6 +216,9 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     //Method which is sentive to FCLK_CLK1_clk sc_clock object
     //FCLK_CLK1 pin written based on FCLK_CLK1_clk clock value 
     void trigger_FCLK_CLK1_pin();
+    //Method which is sentive to FCLK_CLK2_clk sc_clock object
+    //FCLK_CLK2 pin written based on FCLK_CLK2_clk clock value 
+    void trigger_FCLK_CLK2_pin();
     
     void IRQ_F2P_method();
     //FCLK_RESET0 output reset pin get toggle when emio bank 2's 31th signal gets toggled

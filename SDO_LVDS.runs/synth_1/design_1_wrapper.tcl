@@ -93,7 +93,7 @@ set_property ip_output_repo c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SD
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd
+read_vhdl -library xil_defaultlib c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 add_files C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
@@ -110,11 +110,20 @@ set_property used_in_implementation false [get_files -all c:/Users/19165/Documen
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

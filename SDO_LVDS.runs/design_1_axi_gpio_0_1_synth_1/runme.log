@@ -12,7 +12,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_axi_gpio_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 590.055 ; gain = 215.754
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 592.211 ; gain = 220.551
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/19165/Documents/Xilinx_Projects/ip_repo/LVDS_Tx_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/19165/Documents/Xilinx_Projects/ip_repo/ClockDivider_1_0'.
@@ -27,15 +27,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 69600
+INFO: [Synth 8-7075] Helper process launched with PID 15276
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1459.652 ; gain = 439.250
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1460.152 ; gain = 439.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/synth/design_1_axi_gpio_0_1.vhd:86]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_GPIO_WIDTH bound to: 5 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 6 - type: integer 
 	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
 	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
@@ -78,7 +78,7 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_t
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
@@ -87,6 +87,12 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
@@ -108,7 +114,7 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
@@ -117,6 +123,12 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
@@ -136,6 +148,7 @@ WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_G
 WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
 WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
 WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/ipshared/6fbe/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
 WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_in in module cdc_sync is either unconnected or has no load
@@ -195,19 +208,19 @@ WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1576.832 ; gain = 556.430
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1577.184 ; gain = 556.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1576.832 ; gain = 556.430
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1577.184 ; gain = 556.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1576.832 ; gain = 556.430
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1577.184 ; gain = 556.840
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1576.832 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1577.184 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -223,30 +236,30 @@ Parsing XDC File [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.run
 Finished Parsing XDC File [C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/design_1_axi_gpio_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1677.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1673.723 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 30 instances were transformed.
-  FDR => FDRE: 30 instances
+  A total of 36 instances were transformed.
+  FDR => FDRE: 36 instances
 
 The system cannot find the path specified.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1677.305 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1673.734 ; gain = 0.012
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/design_1_axi_gpio_0_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -259,7 +272,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -270,7 +283,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
-	                5 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
 	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 18    
@@ -278,13 +291,13 @@ Detailed RTL Component Info :
 	   5 Input   32 Bit        Muxes := 1     
 	   2 Input   32 Bit        Muxes := 1     
 	   2 Input    9 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
 	   4 Input    4 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 5     
 	   2 Input    2 Bit        Muxes := 3     
 	   3 Input    2 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 21    
+	   2 Input    1 Bit        Muxes := 23    
 	   4 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -343,31 +356,33 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:41 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:57 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:51 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:57 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:51 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:58 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:51 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -385,37 +400,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -432,43 +447,43 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     2|
-|2     |LUT2 |    10|
+|2     |LUT2 |     9|
 |3     |LUT3 |     8|
-|4     |LUT4 |     9|
-|5     |LUT5 |    20|
-|6     |LUT6 |    13|
-|7     |FDR  |    20|
-|8     |FDRE |    61|
-|9     |FDSE |     6|
+|4     |LUT4 |    10|
+|5     |LUT5 |    30|
+|6     |LUT6 |     8|
+|7     |FDR  |    24|
+|8     |FDRE |    67|
+|9     |FDSE |     7|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:05 . Memory (MB): peak = 1677.305 ; gain = 556.430
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1677.305 ; gain = 656.902
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:55 . Memory (MB): peak = 1673.734 ; gain = 556.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1673.734 ; gain = 653.391
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1677.305 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1673.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1677.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1673.734 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 20 instances were transformed.
-  FDR => FDRE: 20 instances
+  A total of 24 instances were transformed.
+  FDR => FDRE: 24 instances
 
 The system cannot find the path specified.
-Synth Design complete | Checksum: 57a9b8cd
+Synth Design complete | Checksum: af6d6c40
 INFO: [Common 17-83] Releasing license: Synthesis
-89 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+97 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:24 . Memory (MB): peak = 1677.305 ; gain = 1074.074
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1677.305 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:14 . Memory (MB): peak = 1673.734 ; gain = 1068.426
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1673.734 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/design_1_axi_gpio_0_1_synth_1/design_1_axi_gpio_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_gpio_0_1, cache-ID = 41596538eb260650
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_gpio_0_1, cache-ID = 0a88e84e08825e50
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1677.305 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1673.734 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.runs/design_1_axi_gpio_0_1_synth_1/design_1_axi_gpio_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_gpio_0_1_utilization_synth.rpt -pb design_1_axi_gpio_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 18:55:03 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  5 15:22:02 2024...

@@ -58,3 +58,11 @@ set_property PACKAGE_PIN P20 [get_ports QSPI_rtl_tri_io[3]]; # SD3
 set_property PACKAGE_PIN G19 [get_ports QSPI_rtl_tri_io[4]]; # SCK
 set_property PACKAGE_PIN G21 [get_ports QSPI_rtl_tri_io[5]]; # CSN
 
+set_property IOSTANDARD LVCMOS25 [get_ports {CLK_25MHZ[0]}]
+set_property PACKAGE_PIN E20 [get_ports CLK_25MHZ[0]]; 
+
+set_property IOSTANDARD LVCMOS25 [get_ports {CLK_10MHZ}]
+set_property PACKAGE_PIN D21 [get_ports CLK_10MHZ]; 
+
+set_property IOSTANDARD LVCMOS25 [get_ports {LEV_SHIFT_rtl_tri_o[0]}]
+set_property PACKAGE_PIN P22 [get_ports LEV_SHIFT_rtl_tri_o[0]]; 

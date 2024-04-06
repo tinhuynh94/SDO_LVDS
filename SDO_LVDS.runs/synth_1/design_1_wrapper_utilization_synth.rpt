@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Mar 28 18:56:46 2024
+| Date         : Fri Apr  5 15:24:16 2024
 | Host         : LAPTOP-4NG0TGNQ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |    9 |     0 |          0 |       200 |  4.50 |
+| Bonded IOB                  |   13 |     0 |          0 |       200 |  6.50 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
@@ -148,8 +148,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUFT    |    9 |                  IO |
-| IBUF     |    9 |                  IO |
+| OBUFT    |   10 |                  IO |
+| IBUF     |   10 |                  IO |
+| OBUF     |    3 |                  IO |
 +----------+------+---------------------+
 
 
@@ -160,12 +161,18 @@ Warning! LUT value is adjusted to account for LUT combining.
 |             Ref Name            | Used |
 +---------------------------------+------+
 | design_1_xbar_0                 |    1 |
+| design_1_util_vector_logic_0_0  |    1 |
 | design_1_util_ds_buf_1_0        |    1 |
 | design_1_util_ds_buf_0_0        |    1 |
+| design_1_s00_mmu_0              |    1 |
 | design_1_rst_ps7_0_100M_0       |    1 |
 | design_1_processing_system7_0_0 |    1 |
+| design_1_axi_gpio_0_3           |    1 |
+| design_1_axi_gpio_0_2           |    1 |
 | design_1_axi_gpio_0_1           |    1 |
 | design_1_axi_gpio_0_0           |    1 |
+| design_1_auto_pc_6              |    1 |
+| design_1_auto_pc_5              |    1 |
 | design_1_auto_pc_4              |    1 |
 | design_1_auto_pc_3              |    1 |
 | design_1_auto_pc_2              |    1 |

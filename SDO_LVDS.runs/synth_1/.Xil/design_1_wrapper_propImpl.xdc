@@ -85,3 +85,9 @@ set_property src_info {type:XDC file:1 line:58 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN G19 [get_ports QSPI_rtl_tri_io[4]]; # SCK
 set_property src_info {type:XDC file:1 line:59 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G21 [get_ports QSPI_rtl_tri_io[5]]; # CSN
+set_property src_info {type:XDC file:1 line:62 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E20 [get_ports CLK_25MHZ[0]];
+set_property src_info {type:XDC file:1 line:65 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D21 [get_ports CLK_10MHZ];
+set_property src_info {type:XDC file:1 line:68 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P22 [get_ports LEV_SHIFT_rtl_tri_o[0]];

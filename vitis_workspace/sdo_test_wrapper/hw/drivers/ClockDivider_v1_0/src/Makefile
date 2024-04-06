@@ -9,20 +9,18 @@ RELEASEDIR=../../../lib
 INCLUDEDIR=../../../include
 INCLUDES=-I./. -I${INCLUDEDIR}
 
-INCLUDEFILES=$(wildcard *.h)
-LIBSOURCES=$(wildcard *.c *.cpp)
-OUTS = $(wildcard *.o)
-OBJECTS = $(addsuffix .o, $(basename $(wildcard *.c *.cpp)))
-ASSEMBLY_OBJECTS = $(addsuffix .o, $(basename $(wildcard *.S)))
+INCLUDEFILES=*.h
+LIBSOURCES=*.c
+OUTS = *.o
 
 libs:
-	echo "<CustomIP_name>..."
+	echo "Compiling ClockDivider..."
 	$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
-	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OBJECTS} ${ASSEMBLY_OBJECTS}
+	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OUTS}
 	make clean
 
 include:
 	${CP} $(INCLUDEFILES) $(INCLUDEDIR)
 
 clean:
-	rm -rf ${OBJECTS} ${ASSEMBLY_OBJECTS}
+	rm -rf ${OUTS}

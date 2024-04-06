@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Apr  5 14:59:34 2024
+# Process ID: 39748
+# Current directory: C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3692 C:\Users\19165\Documents\Xilinx_Projects\SDO_LVDS\SDO_LVDS.xpr
+# Log file: C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vivado.log
+# Journal file: C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS\vivado.jou
+# Running On: LAPTOP-4NG0TGNQ, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 12540 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.xpr
+open_bd_design {C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_EN_CLK2_PORT {1} \
+  CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {10} \
+] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property CONFIG.C_GPIO_WIDTH {6} [get_bd_cells QSPI_GPIO]
+endgroup
+create_bd_port -dir O -type clk CLK_10MHZ
+startgroup
+connect_bd_net [get_bd_ports CLK_10MHZ] [get_bd_pins processing_system7_0/FCLK_CLK2]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins util_vector_logic_0/Op1]
+startgroup
+set_property CONFIG.C_SIZE {1} [get_bd_cells util_vector_logic_0]
+endgroup
+create_bd_port -dir O -type clk CLK_25MHZ
+startgroup
+connect_bd_net [get_bd_ports CLK_25MHZ] [get_bd_pins util_vector_logic_0/Res]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property CONFIG.C_GPIO_WIDTH {1} [get_bd_cells axi_gpio_0]
+set_property CONFIG.C_ALL_OUTPUTS {1} [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins util_vector_logic_0/Op2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+regenerate_bd_layout
+set_property name EN_CLK25_GPIO [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M04_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M07_AXI] [get_bd_intf_pins EN_CLK25_GPIO/S_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name LEV_SHIFT_OE_GPIO [get_bd_cells axi_gpio_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M06_AXI] [get_bd_intf_pins LEV_SHIFT_OE_GPIO/S_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {Custom} Manual_Source {Auto}}  [get_bd_intf_pins LEV_SHIFT_OE_GPIO/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins LEV_SHIFT_OE_GPIO/s_axi_aclk]
+endgroup
+set_property name LEV_SHIFT_rtl [get_bd_intf_ports gpio_rtl]
+regenerate_bd_layout
+save_bd_design
+copy_run -name impl_1_copy_5 [get_runs impl_1] -parent_run synth_1
+set_property target_language VHDL [current_project]
+make_wrapper -files [get_files C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd
+file delete -force C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/imports/hdl/design_1_wrapper.vhd
+startgroup
+set_property CONFIG.C_ALL_OUTPUTS {1} [get_bd_cells LEV_SHIFT_OE_GPIO]
+endgroup
+startgroup
+set_property CONFIG.C_GPIO_WIDTH {1} [get_bd_cells LEV_SHIFT_OE_GPIO]
+endgroup
+startgroup
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.srcs/sources_1/bd/design_1/design_1.bd] -top
+copy_run -name impl_1_copy_6 [get_runs impl_1] -parent_run synth_1
+set_property target_language Verilog [current_project]
+reset_run synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_LVDS_Tx_0_0_synth_1
+reset_run design_1_axi_gpio_0_1_synth_1
+reset_run design_1_util_ds_buf_0_0_synth_1
+reset_run design_1_util_ds_buf_1_0_synth_1
+reset_run design_1_axi_gpio_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/sdo_test_wrapper.xsa
+save_bd_design_as SDO_test -dir {C:/Users/19165/Documents/Xilinx_Projects/SDO_test}
+add_files -norecurse C:/Users/19165/Documents/Xilinx_Projects/SDO_test/SDO_test/SDO_test.bd
+export_ip_user_files -of_objects  [get_files  C:/Users/19165/Documents/Xilinx_Projects/SDO_test/SDO_test/SDO_test.bd] -lib_map_path [list {modelsim=C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.cache/compile_simlib/modelsim} {questa=C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.cache/compile_simlib/questa} {riviera=C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.cache/compile_simlib/riviera} {activehdl=C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/SDO_LVDS.cache/compile_simlib/activehdl}] -force -quiet
+open_bd_design {C:/Users/19165/Documents/Xilinx_Projects/SDO_test/SDO_test/SDO_test.bd}

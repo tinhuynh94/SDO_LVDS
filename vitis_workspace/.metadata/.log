@@ -3575,3 +3575,165 @@ java.lang.Error
 	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
 	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2024-04-05 17:31:28.167 -----------------------------------------------
+eclipse.buildId=2023.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-05 17:32:19.874
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2024-04-05 17:32:22.364
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-05 17:32:28.341
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-05 17:32:28.343
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-04-05 17:32:28.344
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:28.609
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:28.610
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:28.622
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:31.824
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:31.825
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:31.825
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:31.825
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:31.826
+!MESSAGE XSCT Command: [setws C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:31.827
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/SharedData/2023.2/data;C:/Xilinx/Vitis/2023.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:32:31.829
+!MESSAGE XSCT command with result: [setws C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace], Result: [null, ]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:06.761
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:08.657
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:08.667
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:08.681
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:08.682
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:08.688
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-05 17:46:08.689
+!MESSAGE Generating MD5 hash for file: C:\Users\19165\Documents\Xilinx_Projects\SDO_LVDS\vitis_workspace\sdo_test_wrapper\export\sdo_test_wrapper\sw\sdo_test_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:08.694
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:46:08.697
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-04-05 17:46:09.272
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:58:32.822
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:58:32.827
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:58:32.828
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:58:32.831
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-05 17:58:32.832
+!MESSAGE Generating MD5 hash for file: C:\Users\19165\Documents\Xilinx_Projects\SDO_LVDS\vitis_workspace\sdo_test_wrapper\export\sdo_test_wrapper\sw\sdo_test_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:58:32.833
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 17:58:32.836
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-04-05 17:58:33.208
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:02:46.269
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:02:46.275
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:02:46.276
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:02:46.281
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-05 18:02:46.282
+!MESSAGE Generating MD5 hash for file: C:\Users\19165\Documents\Xilinx_Projects\SDO_LVDS\vitis_workspace\sdo_test_wrapper\export\sdo_test_wrapper\sw\sdo_test_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:02:46.283
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:02:46.286
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-04-05 18:02:46.668
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:04:23.048
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:04:23.055
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:04:23.056
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:04:23.061
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/hw/sdo_test_wrapper.xsa C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "9.0",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-05 18:04:23.062
+!MESSAGE Generating MD5 hash for file: C:\Users\19165\Documents\Xilinx_Projects\SDO_LVDS\vitis_workspace\sdo_test_wrapper\export\sdo_test_wrapper\sw\sdo_test_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:04:23.063
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-05 18:04:23.066
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/19165/Documents/Xilinx_Projects/SDO_LVDS/vitis_workspace/sdo_test_wrapper/export/sdo_test_wrapper/sw/sdo_test_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-21: Build Project

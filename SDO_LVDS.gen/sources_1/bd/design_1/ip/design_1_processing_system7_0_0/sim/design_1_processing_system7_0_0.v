@@ -104,6 +104,7 @@ M_AXI_GP0_RDATA,
 IRQ_F2P, 
 FCLK_CLK0, 
 FCLK_CLK1, 
+FCLK_CLK2, 
 FCLK_RESET0_N, 
 MIO, 
 DDR_CAS_n, 
@@ -175,6 +176,7 @@ input [31 : 0] M_AXI_GP0_RDATA;
 input [1 : 0] IRQ_F2P;
 output FCLK_CLK0;
 output FCLK_CLK1;
+output FCLK_CLK2;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;
 input DDR_CAS_n;
@@ -579,7 +581,7 @@ input PS_PORB;
 	
     .FCLK_CLK1(FCLK_CLK1),
 	
-    .FCLK_CLK2(),
+    .FCLK_CLK2(FCLK_CLK2),
 	
     .FCLK_CLK3(),
     .FCLK_RESET0_N(FCLK_RESET0_N),

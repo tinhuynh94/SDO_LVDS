@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Mar 28 18:58:23 2024
+| Date         : Fri Apr  5 15:25:48 2024
 | Host         : LAPTOP-4NG0TGNQ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 31
+             Violations found: 34
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
 | TIMING-14 | Critical Warning | LUT on the clock tree         | 3          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell   | 6          |
 | LUTAR-1   | Warning          | LUT drives async reset alert  | 2          |
-| TIMING-18 | Warning          | Missing input or output delay | 20         |
+| TIMING-18 | Warning          | Missing input or output delay | 23         |
 +-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -145,57 +145,72 @@ Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on LVDS_DATA_N[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An input delay is missing on QSPI_rtl_tri_io[5] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on LVDS_DATA_P[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on LEV_SHIFT_rtl_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on MISC_rtl_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on LVDS_DATA_N[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on MISC_rtl_tri_io[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on LVDS_DATA_P[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An output delay is missing on MISC_rtl_tri_io[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on MISC_rtl_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An output delay is missing on MISC_rtl_tri_io[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on MISC_rtl_tri_io[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on QSPI_rtl_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on MISC_rtl_tri_io[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on QSPI_rtl_tri_io[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on MISC_rtl_tri_io[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on QSPI_rtl_tri_io[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on QSPI_rtl_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on QSPI_rtl_tri_io[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on QSPI_rtl_tri_io[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
+An output delay is missing on QSPI_rtl_tri_io[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on QSPI_rtl_tri_io[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
 An output delay is missing on QSPI_rtl_tri_io[4] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on QSPI_rtl_tri_io[5] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 
